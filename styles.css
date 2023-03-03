@@ -1,0 +1,122 @@
+body {
+    overflow-x: hidden;
+    background-color: #684BB1;
+    background-image: url("./bg-mobile.svg");
+    background-repeat: no-repeat;
+    padding: 38px 35px 40px;
+}
+
+main {
+    background-image: url(./illustration-mockups.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 70px;
+    padding: 250px 0 24px;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 16px 0 24px;
+}
+
+button {
+    background-color: #FFFFFF;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.269022);
+    border: 0;
+    border-radius: 20px;
+    padding: 11px 76px;
+    margin-left: 50%;
+    transform: translateX(-100px);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #684BB1;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    gap: 11px;
+}
+
+@media screen and (min-width:1024px) {
+    body {
+        background-image: url("./bg-desktop.svg");
+        padding: 64px 85px 40px 80px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        background-size: 50%;
+        padding-bottom: 200px;
+    }
+
+    section {
+        position: absolute;
+        top: 232px;
+        width: 520px;
+
+
+    }
+
+    h1 {
+        font-size: 40px;
+        line-height: 60px;
+        text-align: unset;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 27px;
+        text-align: unset;
+        padding-top: 24px;
+    }
+
+    button {
+        background-color: #E880E8;
+        color: #ffffff;
+        box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+        border-radius: 28px;
+        padding: 13px 63px 16px 64px;
+        font-size: 18px;
+        line-height: 27px;
+        margin: 0;
+        transform: translateX(0);
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #FFFFFF;
+        color: #684BB1;
+    }
+
+    .social-media {
+        position: absolute;
+        right: 80px;
+        top: 595px;
+        gap: 16px;
+        width: fit-content;
+
+    }
+}
