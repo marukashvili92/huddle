@@ -3,7 +3,12 @@ body {
     background-color: #684BB1;
     background-image: url("./bg-mobile.svg");
     background-repeat: no-repeat;
-    padding: 38px 35px 40px;
+    background-size: contain;
+    padding: 0 35px;
+}
+
+header {
+    margin-top: 38px;
 }
 
 main {
@@ -11,7 +16,7 @@ main {
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 70px;
-    padding: 250px 0 24px;
+    padding-top: 268px;
 }
 
 h1 {
@@ -50,6 +55,14 @@ button {
     line-height: 18px;
     text-align: center;
     color: #684BB1;
+
+    transition: transform 1s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #E880E8;
+    color: #ffffff;
 }
 
 .social-media {
@@ -59,10 +72,58 @@ button {
     gap: 11px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px #FFFFFF solid;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+
+    transition: transform 1s ease-in-out;
+}
+
+.logo:hover {
+    transform: rotate(720deg);
+    cursor: pointer;
+    border-color: #FF52C1;
+}
+
+.logo:hover svg {
+    fill: #FF52C1;
+}
+
+.fb svg {
+    width: 7px;
+    fill: #FFFFFF;
+}
+
+.twt svg {
+    width: 18px;
+    fill: #FFFFFF;
+}
+
+.ins svg {
+    width: 13px;
+    fill: #FFFFFF;
+}
+
 @media screen and (min-width:1024px) {
     body {
         background-image: url("./bg-desktop.svg");
-        padding: 64px 85px 40px 80px;
+        background-size: cover;
+        padding: 0 80px;
+    }
+
+    header {
+        margin-top: 50px;
+        margin-left: -84px;
+    }
+
+    header svg {
+        width: 400px;
+        height: 64px;
     }
 
     main {
@@ -74,8 +135,8 @@ button {
 
     section {
         position: absolute;
-        top: 232px;
-        width: 520px;
+        top: 202px;
+        width: 410px;
 
 
     }
@@ -94,8 +155,8 @@ button {
     }
 
     button {
-        background-color: #E880E8;
-        color: #ffffff;
+        background-color: #FFFFFF;
+        color: #684BB1;
         box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
         border-radius: 28px;
         padding: 13px 63px 16px 64px;
@@ -103,12 +164,6 @@ button {
         line-height: 27px;
         margin: 0;
         transform: translateX(0);
-    }
-
-    button:hover {
-        cursor: pointer;
-        background-color: #FFFFFF;
-        color: #684BB1;
     }
 
     .social-media {
@@ -119,4 +174,30 @@ button {
         width: fit-content;
 
     }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .fb svg {
+        width: 9px;
+    }
+
+    .twt svg {
+        width: 26px;
+    }
+
+    .ins svg {
+        width: 19px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    section {
+        left: 835px;
+        width: 520px;
+
+    }
+
 }
